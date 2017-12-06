@@ -6,7 +6,7 @@ This project demonstrates how to use **Driver License Parser library for Java** 
 
 ### IDEA
 
-1. Download the [latest version](https://idscan.net/solutions/enterprise/id-parsing-sdk/) of **Driver License Parser Library for Java** for target platform. The downloaded archive should contain next components:
+1. Download the [latest version](https://idscan.net/solutions/enterprise/id-parsing-sdk/) of **Driver License Parser Library for Java** for target platform. The archive contains next components:
     + **linux_x86/linux_x86_64**  
         ```
         ./
@@ -20,7 +20,7 @@ This project demonstrates how to use **Driver License Parser library for Java** 
         ├ idscan_parser.dll
         ```
 
-2. Add **libs** directory to the project and put into appropriate library files. Project structure might look like this:
+2. Add **libs** directory to the project and put into appropriate library files. The project structure looks like this:
     + **Linux**  
         ```
         - MODULE
@@ -49,12 +49,12 @@ This project demonstrates how to use **Driver License Parser library for Java** 
     + Select **dlparserlib.jar** and press OK.  
         ![Import PDF417Scanner.aar](images/idea_select_jar.png)
 
-4. Setup **Dynamic Link Library**. **dlparserlib.jar** depends on a native library so you need to setup **java.library.path** variable for Java VM could find the appropriate library.  
+4. Setup **Dynamic Link Library**. **dlparserlib.jar** depends on a native library. You need to setup **java.library.path** variable so that Java VM can find the appropriate library.  
     ![Import PDF417Scanner.aar](images/idea_setup_so.png)
 
 ### Eclipse
 
-1. Download the [latest version](https://idscan.net/solutions/enterprise/id-parsing-sdk/) of **Driver License Parser Library for Java** for target platform. The downloaded archive should contain next components:
+1. Download the [latest version](https://idscan.net/solutions/enterprise/id-parsing-sdk/) of **Driver License Parser Library for Java** for target platform. The archive contains next components:
     + **linux_x86/linux_x86_64**  
         ```
         ./
@@ -68,7 +68,7 @@ This project demonstrates how to use **Driver License Parser library for Java** 
         ├ idscan_parser.dll
         ```
 
-2. Add **libs** directory to the project and put into appropriate library files. Project structure might look like this:
+2. Add **libs** directory to the project and put into appropriate library files. The project structure looks like this:
     + **Linux**  
         ```
         - Project
@@ -97,7 +97,7 @@ This project demonstrates how to use **Driver License Parser library for Java** 
     + Select **dlparserlib.jar** and press OK.  
         ![Import PDF417Scanner.aar](images/eclipse_select_jar.png)
 
-4. Setup **Dynamic Link Library**. **dlparserlib.jar** depends on a native library so you need to setup **java.library.path** variable for Java VM could find the appropriate library.
+4. Setup **Dynamic Link Library**. **dlparserlib.jar** depends on a native library. You need to setup **java.library.path** variable so that Java VM can find the appropriate library.
     + Open **project properties**(Alt + Enter) → **Java Build Path** → **libraries** tab.
     + Expand **dlparserlib.jar**, select **Native Library Location** and press **Edit...**
     ![Import PDF417Scanner.aar](images/eclipse_setup_so_1.png)  
@@ -120,7 +120,7 @@ try {
 }
 ```
 
-3. Parse a data. For parsing data, you need to call ```parse(byte[])``` method.  
+3. Parse data. For parsing data you need to call ```parse(byte[])``` method.  
 ```
 try {
     DLResult res = parser.parse(data);
