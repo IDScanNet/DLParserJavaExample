@@ -120,7 +120,7 @@ try {
 }
 ```
 
-3. Parse data. For parsing data you need to call ```parse(byte[])``` method.  
+3. Parse the data. For parsing data you need to call ```parse(byte[])``` method.
 ```
 try {
     DLResult res = parser.parse(data);
